@@ -2,11 +2,12 @@
 
 ![surfs-up.jpeg](Images/surfs-up.jpeg)
 
-Congratulations! You've decided to treat yourself to a long holiday vacation in Honolulu, Hawaii! To help with your trip planning, you need to do some climate analysis on the area. The following outlines what you need to do.
+This project was for analyzing the weather in Hawaii by looking at the level of precipitation in Hawaii. 
+
 
 ## Step 1 - Climate Analysis and Exploration
 
-To begin, use Python and SQLAlchemy to do basic climate analysis and data exploration of your climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
+Used Python and SQLAlchemy to do climate analysis and data exploration of climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
 * Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
 
