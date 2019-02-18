@@ -2,56 +2,56 @@
 
 ![surfs-up.jpeg](Images/surfs-up.jpeg)
 
-This project was for analyzing the weather in Hawaii by looking at the level of precipitation in Hawaii. 
+This project was for analyzing the weather in Hawaii by looking at the level of precipitation. 
 
 
 ## Step 1 - Climate Analysis and Exploration
 
-Used Python and SQLAlchemy to do climate analysis and data exploration of climate database. All of the following analysis should be completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
+Used Python and SQLAlchemy to do climate analysis and data exploration of climate database. All of the following analysis was completed using SQLAlchemy ORM queries, Pandas, and Matplotlib.
 
-* Choose a start date and end date for your trip. Make sure that your vacation range is approximately 3-15 days total.
+* Vacation range is approximately 15 days total.
 
-* Use SQLAlchemy `create_engine` to connect to your sqlite database.
+* Use SQLAlchemy `create_engine` to connect to sqlite database.
 
-* Use SQLAlchemy `automap_base()` to reflect your tables into classes and save a reference to those classes called `Station` and `Measurement`.
+* Use SQLAlchemy `automap_base()` to reflect tables into classes and save a reference to those classes called `Station` and `Measurement`.
 
 ### Precipitation Analysis
 
-* Design a query to retrieve the last 12 months of precipitation data.
+* Designed a query to retrieve the last 12 months of precipitation data.
 
-* Select only the `date` and `prcp` values.
+* Pulled the `date` and `prcp` values.
 
-* Load the query results into a Pandas DataFrame and set the index to the date column.
+* Loaded the query results into a Pandas DataFrame and set the index to the date column.
 
-* Sort the DataFrame values by `date`.
+* Sorted the DataFrame values by `date`.
 
 * Plot the results using the DataFrame `plot` method.
 
   ![precipitation](Images/precipitation.png)
 
-* Use Pandas to print the summary statistics for the precipitation data.
+* Used Pandas to print the summary statistics for the precipitation data.
 
 ### Station Analysis
 
-* Design a query to calculate the total number of stations.
+* Designed a query to calculate the total number of stations.
 
-* Design a query to find the most active stations.
+* Designed a query to find the most active stations.
 
   * List the stations and observation counts in descending order.
 
   * Which station has the highest number of observations?
 
-  * Hint: You may need to use functions such as `func.min`, `func.max`, `func.avg`, and `func.count` in your queries.
+  * Used functions `func.min`, `func.max`, `func.avg`, and `func.count` in queries.
 
-* Design a query to retrieve the last 12 months of temperature observation data (tobs).
+* Designed a query to retrieve the last 12 months of temperature observation data (tobs).
 
-  * Filter by the station with the highest number of observations.
+  * Filtered by the station with the highest number of observations.
 
   * Plot the results as a histogram with `bins=12`.
 
     ![station-histogram](Images/station-histogram.png)
 
-### Temperature Analysis (Optional)
+### Temperature Analysis
 
 * The starter notebook contains a function called `calc_temps` that will accept a start date and end date in the format `%Y-%m-%d` and return the minimum, average, and maximum temperatures for that range of dates.
 
